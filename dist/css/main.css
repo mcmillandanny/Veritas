@@ -57,7 +57,280 @@ table {
 }
 
 body {
-	background: #ccc;
+	background: #fffde9;
+}
+
+header {
+	width: 100%;
+	background-color: #57585a;
+	border-bottom: 1px solid black;
+}
+
+header .header-wrap {
+	width: 100%;
+}
+
+header .header-wrap img {
+	padding: 20px;
+}
+
+header .header-wrap .hamburger {
+	float: right;
+	margin: 20px;
+	padding: 20px;
+	cursor: pointer;
+	z-index: 10;
+}
+
+header .header-wrap .hamburger .line-1 {
+	width: 45px;
+	height: 3px;
+	border-radius: 10px;
+	background-color: white;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+
+header .header-wrap .hamburger .line-2 {
+	width: 45px;
+	height: 3px;
+	border-radius: 10px;
+	background-color: white;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+
+header .header-wrap .hamburger .line-3 {
+	width: 45px;
+	height: 3px;
+	border-radius: 10px;
+	background-color: white;
+	margin: 6px 0;
+	transition: 0.4s ease-in-out;
+}
+
+header .header-wrap .hamburger .change.line-1 {
+	transform: rotate(-45deg) translate(-5px, 3px);
+	width: 45px;
+}
+
+header .header-wrap .hamburger .change.line-2 {
+	opacity: 0;
+}
+
+header .header-wrap .hamburger .change.line-3 {
+	transform: rotate(45deg) translate(-8px, -8px);
+}
+
+header .toggle-nav {
+	display: none;
+}
+
+header nav {
+	width: 100%;
+	background-color: #6c6d70;
+}
+
+header nav ul {
+	width: 60%;
+	margin: 0px auto;
+	background-color: #6c6d70;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+header nav ul li {
+	margin: 10px;
+}
+
+header nav ul .divider {
+	position: relative;
+}
+
+header nav ul .divider::after {
+	content: "";
+	position: absolute;
+	height: 12px;
+	width: 2px;
+	background-color: #fffde9;
+	top: 20%;
+	left: 120%;
+}
+
+header nav ul .divider-estate {
+	position: relative;
+}
+
+header nav ul .divider-estate::after {
+	content: "";
+	position: absolute;
+	height: 12px;
+	width: 2px;
+	background-color: #fffde9;
+	top: 20%;
+	left: 112%;
+}
+
+header nav ul .divider-banking {
+	position: relative;
+}
+
+header nav ul .divider-banking::after {
+	content: "";
+	position: absolute;
+	height: 12px;
+	width: 2px;
+	background-color: #fffde9;
+	top: 20%;
+	left: 115%;
+}
+
+header nav ul .divider-oil {
+	position: relative;
+}
+
+header nav ul .divider-oil::after {
+	content: "";
+	position: absolute;
+	height: 12px;
+	width: 2px;
+	background-color: #fffde9;
+	top: 20%;
+	left: 112%;
+}
+
+header nav ul a {
+	text-decoration: none;
+	color: #fffde9;
+	font-size: 1.1em;
+	margin: 0px auto;
+}
+
+.content-home {
+	height: 100vh;
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	background-color: #57585a;
+}
+
+.content-home p {
+	padding: 50px;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.content-about {
+	width: 100%;
+	max-width: 1200px;
+	padding: 20px;
+	margin: auto;
+	background-color: #fffde9;
+}
+
+.content-about h1 {
+	border-bottom: 1px solid #57585a;
+	text-align: center;
+	padding: 10px;
+	font-size: 2em;
+	color: #57585a;
+}
+
+.content-about .col-1-about, .content-about .col-2-about {
+	margin-top: 25px;
+	text-align: left;
+}
+
+.content-about .col-1-about h2, .content-about .col-2-about h2 {
+	margin-bottom: 15px;
+	font-size: 1.4em;
+	color: #57585a;
+}
+
+.content-about .col-1-about p, .content-about .col-2-about p {
+	font-size: 1.1em;
+	margin: 15px 0px;
+	line-height: 1.2;
+}
+
+.content-team {
+	width: 100%;
+	max-width: 1200px;
+	padding: 20px;
+	margin: auto;
+	background-color: #fffde9;
+}
+
+.content-team h1 {
+	border-bottom: 1px solid #57585a;
+	text-align: center;
+	padding: 10px;
+	font-size: 2em;
+	color: #57585a;
+}
+
+.content-team .col-1-team, .content-team .col-2-team, .content-team .col-3-team {
+	margin-top: 25px;
+	text-align: left;
+	line-height: 1.2;
+}
+
+.content-team .col-1-team img, .content-team .col-2-team img, .content-team .col-3-team img {
+	display: block;
+	margin: auto;
+	padding: 20px;
+}
+
+.content-team .col-1-team h2, .content-team .col-2-team h2, .content-team .col-3-team h2 {
+	margin: 5px 0px;
+	display: inline-block;
+	font-size: 1.1em;
+}
+
+.content-team .col-1-team .divider-team, .content-team .col-2-team .divider-team, .content-team .col-3-team .divider-team {
+	position: relative;
+}
+
+.content-team .col-1-team .divider-team::after, .content-team .col-2-team .divider-team::after, .content-team .col-3-team .divider-team::after {
+	content: "";
+	position: absolute;
+	height: 10px;
+	width: 2px;
+	background-color: #57585a;
+	top: 2%;
+	left: -6%;
+}
+
+.content-team .col-1-team h3, .content-team .col-2-team h3, .content-team .col-3-team h3 {
+	margin: 5px 10px;
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: .7em;
+}
+
+.content-real-estate {
+	width: 100%;
+	max-width: 1200px;
+	padding: 20px;
+	margin: auto;
+	background-color: #fffde9;
+}
+
+.content-real-estate h1 {
+	border-bottom: 1px solid #57585a;
+	text-align: center;
+	padding: 10px;
+	font-size: 2em;
+	color: #57585a;
+}
+
+.content-real-estate img {
+	display: block;
+	margin: auto;
+	padding: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,3 +1,18 @@
-console.log(`Hello World from main.js! 
-Change this message, and make sure it changes in the browser 
-to verify that you're working in the right files.`)
+
+
+
+/////Hamburger Toggle
+
+
+
+const hamburger = document.querySelector('.hamburger');
+const lines = document.querySelectorAll('.lines');
+const nav = document.querySelector("nav");
+
+function hamburgerToggle() {
+    lines.forEach(function(line) {
+        line.classList.toggle("change"); 
+        nav.classList.toggle("toggle-nav");
+    });
+};
+hamburger.addEventListener("click", hamburgerToggle);

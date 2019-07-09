@@ -2,15 +2,319 @@
 @import 'reset';
 
 
+
+
+$darkGrey: #57585a;
+$lightGrey: #6c6d70;
+$textColor: #fffde9;
+$softBgColor: #fffde9;
+
 * {
 	box-sizing: border-box;
 }
 
 body {
-	background: #ccc;
+	background: $softBgColor;
+}
+
+
+// =========================HEADER STYLES==================
+
+
+header {
+	width: 100%;
+	background-color: $darkGrey;
+	border-bottom: 1px solid black;
+	
+	.header-wrap {
+		width: 100%;
+
+		img {
+			padding: 20px;
+		}
+
+		.hamburger {
+			float: right;
+			margin: 20px;
+			padding: 20px;
+			cursor: pointer;
+			z-index: 10;
+
+			.line-1 {
+				width: 45px;
+				height: 3px;
+				border-radius: 10px;
+				background-color: white;
+				margin: 6px 0;
+				transition: 0.4s; 
+			}
+
+			.line-2 {
+				width: 45px;
+				height: 3px;
+				border-radius: 10px;
+				background-color: white;
+				margin: 6px 0;
+				transition: 0.4s;
+			}
+			
+			.line-3 {
+				width: 45px;
+				height: 3px;
+				border-radius: 10px;
+				background-color: white;
+				margin: 6px 0;
+				transition: 0.4s ease-in-out;
+			}
+
+			.change.line-1 {
+				transform: rotate(-45deg) translate(-5px, 3px);
+				width: 45px;
+			}
+	
+			.change.line-2 {
+				opacity: 0;
+			}
+	
+			.change.line-3 {
+				transform: rotate(45deg) translate(-8px, -8px) ;
+			}
+
+		}
+	}
+
+	.toggle-nav {
+		display: none;
+	}
+
+	nav {
+		width: 100%;
+		background-color: $lightGrey;
+		
+		ul {
+			width: 60%;
+			margin: 0px auto;
+			background-color: $lightGrey; 
+			padding: 10px;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			flex-wrap: wrap;
+			
+
+			li {
+				margin: 10px;
+
+
+			}
+
+			.divider {
+				position: relative;
+			}
+
+			.divider::after {
+				content: "";
+				position: absolute;
+				height: 12px;
+				width: 2px;
+				background-color: $textColor;
+				top: 20%;
+				left: 120%;
+			}
+
+			.divider-estate {
+				position: relative;
+			}
+
+			.divider-estate::after {
+				content: "";
+				position: absolute;
+				height: 12px;
+				width: 2px;
+				background-color: $textColor;
+				top: 20%;
+				left: 112%;
+			}
+
+			.divider-banking {
+				position: relative;
+			}
+
+			.divider-banking::after {
+				content: "";
+				position: absolute;
+				height: 12px;
+				width: 2px;
+				background-color: $textColor;
+				top: 20%;
+				left: 115%;
+			}
+
+			.divider-oil {
+				position: relative;
+			}
+
+			.divider-oil::after {
+				content: "";
+				position: absolute;
+				height: 12px;
+				width: 2px;
+				background-color: $textColor;
+				top: 20%;
+				left: 112%;
+			}
+			
+			a {
+				text-decoration: none;
+				color: $textColor;
+				font-size: 1.1em;
+				margin: 0px auto;
+
+			}
+		}
+	}
 }
 
 
 
 
 
+
+// ==========================HOME STYLES=================
+
+
+.content-home {
+	height: 100vh;
+	width: 100%;	
+	max-width: 1200px;
+	margin: auto;
+	background-color: $darkGrey;
+	p {
+		padding: 50px;
+		text-align: center;	
+		font-size: 1.5em;
+
+	}
+}
+
+
+
+// ==========================ABOUT STYLES=================
+
+.content-about {
+	width: 100%;
+	max-width: 1200px;
+	padding: 20px;
+	margin: auto;
+	background-color: $softBgColor;
+	h1 {
+		border-bottom: 1px solid $darkGrey;
+		text-align: center;
+		padding: 10px;
+		font-size: 2em;
+		color: $darkGrey;
+	}
+
+	.col-1-about, .col-2-about {
+		margin-top: 25px;
+		text-align: left;
+
+		h2 {
+			margin-bottom: 15px;
+			font-size: 1.4em;
+			color: $darkGrey;
+		}
+
+		p {
+			font-size: 1.1em;
+			margin: 15px 0px;
+			line-height: 1.2;
+		}
+	}
+}
+
+
+// ==========================TEAM STYLES=================
+
+
+.content-team {
+	width: 100%;
+	max-width: 1200px;
+	padding: 20px;
+	margin: auto;
+	background-color: $softBgColor;
+
+	h1 {
+		border-bottom: 1px solid $darkGrey;
+		text-align: center;
+		padding: 10px;
+		font-size: 2em;
+		color: $darkGrey;
+	}
+
+	.col-1-team, .col-2-team, .col-3-team {
+		margin-top: 25px;
+		text-align: left;
+		line-height: 1.2;
+
+		img {
+			display: block;
+			margin: auto;
+			padding: 20px;
+		}
+		h2 {
+			margin: 5px 0px;
+			display: inline-block;
+			font-size: 1.1em;
+
+		}
+
+		.divider-team {
+			position: relative;
+		}
+
+		.divider-team::after {
+			content: "";
+			position: absolute;
+			height: 10px;
+			width: 2px;
+			background-color: $darkGrey;
+			top: 2%;
+			left: -6%;
+		}
+
+		h3 {
+			margin: 5px 10px;
+			display: inline-block;
+			vertical-align: baseline;
+			font-size: .7em;
+		}
+	}
+}
+
+
+// ==========================REAL ESTATE STYLES=================
+
+
+.content-real-estate {
+	width: 100%;
+	max-width: 1200px;
+	padding: 20px;
+	margin: auto;
+	background-color: $softBgColor;
+
+	h1 {
+		border-bottom: 1px solid $darkGrey;
+		text-align: center;
+		padding: 10px;
+		font-size: 2em;
+		color: $darkGrey;
+	}
+ 
+	img {
+		display: block;
+		margin: auto;
+		padding: 20px;
+	}
+	
+}
