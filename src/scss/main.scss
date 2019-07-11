@@ -24,7 +24,6 @@ body {
 header {
 	width: 100%;
 	background-color: $darkGrey;
-	border-bottom: 1px solid black;
 	
 	.header-wrap {
 		width: 100%;
@@ -183,17 +182,54 @@ header {
 // ==========================HOME STYLES=================
 
 
-.content-home {
-	height: 100vh;
-	width: 100%;	
-	max-width: 1200px;
+.image-wrap {
+	width: 100%;
 	margin: auto;
-	background-color: $darkGrey;
-	p {
-		padding: 50px;
-		text-align: center;	
-		font-size: 1.5em;
+	padding: 20px;
+	img {
+		width: 60%;
+		padding: 20px;
+		display: block;
+		margin: auto;
+	}
+}
 
+.hero-home {
+	width: 100%;	
+	margin: auto;
+	background-color: #8b8d90;
+	padding: 50px;
+	p {
+		padding: 20px;
+		text-align: center;	
+		font-size: 1.2em;
+		line-height: 1.2;
+
+	}
+}
+
+
+.featured-project {
+	background-color: #6c6d70;
+	text-align: center;
+	color: white;
+	padding: 20px;
+
+	h1 {
+		padding: 10px;
+		margin: 5px;
+	}
+	p {
+		line-height: 1.2;
+		padding: 5px;
+	}
+}
+
+.hero-image {
+	width: 100%;
+
+	img {
+		width: 100%;
 	}
 }
 

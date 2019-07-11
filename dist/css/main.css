@@ -63,7 +63,6 @@ body {
 header {
 	width: 100%;
 	background-color: #57585a;
-	border-bottom: 1px solid black;
 }
 
 header .header-wrap {
@@ -209,18 +208,56 @@ header nav ul a {
 	margin: 0px auto;
 }
 
-.content-home {
-	height: 100vh;
+.image-wrap {
 	width: 100%;
-	max-width: 1200px;
 	margin: auto;
-	background-color: #57585a;
+	padding: 20px;
 }
 
-.content-home p {
+.image-wrap img {
+	width: 60%;
+	padding: 20px;
+	display: block;
+	margin: auto;
+}
+
+.hero-home {
+	width: 100%;
+	margin: auto;
+	background-color: #8b8d90;
 	padding: 50px;
+}
+
+.hero-home p {
+	padding: 20px;
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.2em;
+	line-height: 1.2;
+}
+
+.featured-project {
+	background-color: #6c6d70;
+	text-align: center;
+	color: white;
+	padding: 20px;
+}
+
+.featured-project h1 {
+	padding: 10px;
+	margin: 5px;
+}
+
+.featured-project p {
+	line-height: 1.2;
+	padding: 5px;
+}
+
+.hero-image {
+	width: 100%;
+}
+
+.hero-image img {
+	width: 100%;
 }
 
 .content-about {
