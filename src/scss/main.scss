@@ -8,6 +8,38 @@ $darkGrey: #57585a;
 $lightGrey: #6c6d70;
 $textColor: #fffde9;
 $softBgColor: #fffde9;
+$lightFont: #fffde9;
+
+@font-face {
+	font-family: "Founders-Regular";
+	src: url("../fonts/FoundersGrotesk-Regular.eot") format("eot"),
+		 url("../fonts/FoundersGrotesk-Regular.woff") format("woff"),
+		 url("../fonts/FoundersGrotesk-Regular.woff2") format("woff2"),
+}
+
+@font-face {
+	font-family: "Founders-Regular-Italic";
+	src: url("../fonts/FoundersGrotesk-RegularItalic.eot") format("eot"),
+		 url("../fonts/FoundersGrotesk-RegularItalic.woff") format("woff"),
+		 url("../fonts/FoundersGrotesk-RegularItalic.woff2") format("woff2"),
+}
+
+@font-face {
+	font-family: "TiemposTex-Regular";
+	src: url("../fonts/TiemposText-Regular.eot") format("eot"),
+		 url("../fonts/TiemposText-Regular.woff") format("woff"),
+		 url("../fonts/TiemposText-Regular.woff2") format("woff2"),
+
+}
+
+@font-face {
+	font-family: "TiemposTex-RegularItalic";
+	src: url("../fonts/TiemposText-RegularItalic.eot") format("eot"),
+		 url("../fonts/TiemposText-RegularItalic.woff") format("woff"),
+		 url("../fonts/TiemposText-RegularItalic.woff2") format("woff2"),
+
+}
+
 
 * {
 	box-sizing: border-box;
@@ -16,6 +48,8 @@ $softBgColor: #fffde9;
 body {
 	background: $softBgColor;
 }
+
+
 
 
 // =========================HEADER STYLES==================
@@ -188,7 +222,7 @@ header {
 	padding: 20px;
 
 	img {
-		width: 35%;
+		width: 40%;
 		padding: 20px;
 		display: block;
 		margin: auto;
@@ -201,14 +235,15 @@ header {
 	background-color: #8b8d90;
 	padding: 50px;
 
+
 	p {
-		width: 95%;
-		margin: auto;
-		padding: 20px;
+		width: 100%;
+		margin: auto auto;
 		text-align: center;	
 		font-size: 1.3em;
-		line-height: 1.3;
-
+		line-height: 1.5;
+		color: $textColor;
+		font-family: "TiemposTex-Regular";
 	}
 }
 
@@ -220,14 +255,34 @@ header {
 	padding: 20px;
 
 	h1 {
+		font-size: 1.8em;
 		padding: 10px;
 		margin: 5px;
+		font-family: "Founders-Regular";
+
 	}
+
+
 	p {
-		line-height: 1.2;
-		padding: 10px;
-		width: 90%;
+		line-height: 1.4;
+		width: 100%;
+		color: $textColor;
 		margin: auto;
+		font-size: 1.3em;
+		font-family: "TiemposTex-Regular";
+		margin-bottom: 10px;
+	}
+
+	a {
+		text-decoration: none;
+		color: #fff;
+		font-size: 1.2em;
+		font-family: "TiemposTex-Regular";
+		padding: 5px;
+	}
+
+	a:hover {
+		color: $textColor;
 	}
 }
 
@@ -249,22 +304,22 @@ header {
 
 	.fb-icon, .insta-icon, .twitter-icon {
 		display: inline-block;
-		width: 3.5%;
-		margin: 0px 10px;
+		width: 7.5%;
+		margin: 10px 10px;
 	}
 
 	h1 {
 		padding: 5px;
-		color: rgba(101, 88, 68, 1);
+		color: $lightFont;
 		font-family: "TiemposTex-Regular";
 	}
 
 	p {
 		padding: 5px;
-		color: rgba(101, 88, 68, 1);
+		color: $lightFont;
 		font-family: "TiemposTex-Regular";
-
 	}
+
 }
 
 footer {
@@ -273,16 +328,58 @@ footer {
 	text-align: center;
 	padding: 50px;
 	width: 100%;
+	font-family: "Founders-Regular";
+	font-size: 1.3em;
 
 	h1 {
 		padding: 20px;
 		font-size: 1.1em;
 	}
-	
+
+	.inline-scale-email {
+		margin-bottom: 10px;
+	}
+
+	p {
+		color: $lightFont;
+		font-family: "TiemposTex-Regular";
+		padding: 5px;
+	}
+
+	a {
+		text-decoration: none;
+		color: $lightFont;
+	}
+
 	.company-footer-text {
 		padding: 5px;
 	}
 
+}
+
+@media only screen and (min-width : 768px) {
+
+	.header-image-wrap {
+		img {
+			max-width: 23%;
+		}
+	}
+
+	.hero-home {
+		p {
+			// padding: 20px;
+			margin-top: 89px;
+			margin-bottom: 80px;
+			font-size: 1.8em;
+		}
+	}
+
+	.social-icons {
+		
+		.fb-icon, .insta-icon, .twitter-icon {
+			width: 3%;
+		}
+	}
 }
 
 
@@ -290,12 +387,12 @@ footer {
 // ==========================ABOUT STYLES=================
 
 .content-about {
-	
 	width: 100%;
 	max-width: 1200px;
 	padding: 20px;
 	margin: auto;
 	background-color: $softBgColor;
+
 	h1 {
 		border-bottom: 1px solid $darkGrey;
 		text-align: center;

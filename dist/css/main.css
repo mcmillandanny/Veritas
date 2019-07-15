@@ -52,6 +52,26 @@ table {
 	border-spacing: 0;
 }
 
+@font-face {
+	font-family: "Founders-Regular";
+	src: url("../fonts/FoundersGrotesk-Regular.eot") format("eot"), url("../fonts/FoundersGrotesk-Regular.woff") format("woff"), url("../fonts/FoundersGrotesk-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Founders-Regular-Italic";
+	src: url("../fonts/FoundersGrotesk-RegularItalic.eot") format("eot"), url("../fonts/FoundersGrotesk-RegularItalic.woff") format("woff"), url("../fonts/FoundersGrotesk-RegularItalic.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "TiemposTex-Regular";
+	src: url("../fonts/TiemposText-Regular.eot") format("eot"), url("../fonts/TiemposText-Regular.woff") format("woff"), url("../fonts/TiemposText-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "TiemposTex-RegularItalic";
+	src: url("../fonts/TiemposText-RegularItalic.eot") format("eot"), url("../fonts/TiemposText-RegularItalic.woff") format("woff"), url("../fonts/TiemposText-RegularItalic.woff2") format("woff2");
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -215,7 +235,7 @@ header nav ul a {
 }
 
 .header-image-wrap img {
-	width: 35%;
+	width: 40%;
 	padding: 20px;
 	display: block;
 	margin: auto;
@@ -229,12 +249,13 @@ header nav ul a {
 }
 
 .hero-home p {
-	width: 95%;
-	margin: auto;
-	padding: 20px;
+	width: 100%;
+	margin: auto auto;
 	text-align: center;
 	font-size: 1.3em;
-	line-height: 1.3;
+	line-height: 1.5;
+	color: #fffde9;
+	font-family: "TiemposTex-Regular";
 }
 
 .featured-project {
@@ -245,15 +266,32 @@ header nav ul a {
 }
 
 .featured-project h1 {
+	font-size: 1.8em;
 	padding: 10px;
 	margin: 5px;
+	font-family: "Founders-Regular";
 }
 
 .featured-project p {
-	line-height: 1.2;
-	padding: 10px;
-	width: 90%;
+	line-height: 1.4;
+	width: 100%;
+	color: #fffde9;
 	margin: auto;
+	font-size: 1.3em;
+	font-family: "TiemposTex-Regular";
+	margin-bottom: 10px;
+}
+
+.featured-project a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.2em;
+	font-family: "TiemposTex-Regular";
+	padding: 5px;
+}
+
+.featured-project a:hover {
+	color: #fffde9;
 }
 
 .hero-image {
@@ -275,19 +313,19 @@ header nav ul a {
 
 .social-icons .fb-icon, .social-icons .insta-icon, .social-icons .twitter-icon {
 	display: inline-block;
-	width: 3.5%;
-	margin: 0px 10px;
+	width: 7.5%;
+	margin: 10px 10px;
 }
 
 .social-icons h1 {
 	padding: 5px;
-	color: #655844;
+	color: #fffde9;
 	font-family: "TiemposTex-Regular";
 }
 
 .social-icons p {
 	padding: 5px;
-	color: #655844;
+	color: #fffde9;
 	font-family: "TiemposTex-Regular";
 }
 
@@ -297,6 +335,8 @@ footer {
 	text-align: center;
 	padding: 50px;
 	width: 100%;
+	font-family: "Founders-Regular";
+	font-size: 1.3em;
 }
 
 footer h1 {
@@ -304,8 +344,37 @@ footer h1 {
 	font-size: 1.1em;
 }
 
+footer .inline-scale-email {
+	margin-bottom: 10px;
+}
+
+footer p {
+	color: #fffde9;
+	font-family: "TiemposTex-Regular";
+	padding: 5px;
+}
+
+footer a {
+	text-decoration: none;
+	color: #fffde9;
+}
+
 footer .company-footer-text {
 	padding: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+	.header-image-wrap img {
+		max-width: 23%;
+	}
+	.hero-home p {
+		margin-top: 89px;
+		margin-bottom: 80px;
+		font-size: 1.8em;
+	}
+	.social-icons .fb-icon, .social-icons .insta-icon, .social-icons .twitter-icon {
+		width: 3%;
+	}
 }
 
 .content-about {

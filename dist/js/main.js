@@ -1,17 +1,18 @@
-'use strict';
+
 
 /////Hamburger Toggle
 
 
-var hamburger = document.querySelector('.hamburger');
-var lines = document.querySelectorAll('.lines');
-var nav = document.querySelector("nav");
+// const hamburger = document.querySelector('.hamburger');
+// const lines = document.querySelectorAll('.lines');
+// const nav = document.querySelector("nav");
 
-function hamburgerToggle() {
-    lines.forEach(function (line) {
-        line.classList.toggle("change");
-        nav.classList.toggle("toggle-nav");
-    });
-};
-hamburger.addEventListener("click", hamburgerToggle);
+// function hamburgerToggle() {
+//     lines.forEach(function(line) {
+//         line.classList.toggle("change"); 
+//         nav.classList.toggle("toggle-nav");
+//     });
+// };
+// hamburger.addEventListener("click", hamburgerToggle);
+"use strict";
 //# sourceMappingURL=main.js.map
