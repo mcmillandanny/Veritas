@@ -58,18 +58,23 @@ body {
 header {
 	width: 100%;
 	background-color: $darkGrey;
-	
-	.header-wrap {
-		width: 100%;
+	overflow: hidden;
+
+	.header-image-wrap {
+		padding: 20px;
+		float: left;
+		width: 50%;
 
 		img {
 			padding: 20px;
+			width: 100%;
 		}
+	}
 
 		.hamburger {
 			float: right;
 			margin: 20px;
-			padding: 20px;
+			padding: 15px;
 			cursor: pointer;
 			z-index: 10;
 
@@ -112,8 +117,6 @@ header {
 			.change.line-3 {
 				transform: rotate(45deg) translate(-8px, -8px) ;
 			}
-
-		}
 	}
 
 	.toggle-nav {
@@ -122,12 +125,13 @@ header {
 
 	nav {
 		width: 100%;
-		background-color: $lightGrey;
+		background-color: rgba(108, 109, 112, .5);
+		clear: both;
+
 		
 		ul {
 			width: 60%;
 			margin: 0px auto;
-			background-color: $lightGrey; 
 			padding: 10px;
 			display: flex;
 			flex-direction: row;
@@ -136,9 +140,7 @@ header {
 			
 
 			li {
-				margin: 10px;
-
-
+				margin: 10px;	
 			}
 
 			.divider {
@@ -202,7 +204,6 @@ header {
 				color: $textColor;
 				font-size: 1.1em;
 				margin: 0px auto;
-
 			}
 		}
 	}
@@ -216,173 +217,37 @@ header {
 // ==========================HOME STYLES=================
 
 
-.header-image-wrap {
-	width: 100%;
-	margin: auto;
-	padding: 20px;
 
-	img {
-		width: 40%;
-		padding: 20px;
-		display: block;
-		margin: auto;
-	}
-}
 
 .hero-home {
 	width: 100%;	
 	margin: auto;
 	background-color: #8b8d90;
-	padding: 50px;
+	background: url("/dist/img/placeholder.webp") no-repeat center;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
 
 
-	p {
-		width: 100%;
-		margin: auto auto;
-		text-align: center;	
-		font-size: 1.3em;
-		line-height: 1.5;
-		color: $textColor;
-		font-family: "TiemposTex-Regular";
-	}
-}
-
-
-.featured-project {
-	background-color: #6c6d70;
-	text-align: center;
-	color: white;
-	padding: 20px;
-
-	h1 {
-		font-size: 1.8em;
-		padding: 10px;
-		margin: 5px;
-		font-family: "Founders-Regular";
-
-	}
-
-
-	p {
-		line-height: 1.4;
-		width: 100%;
-		color: $textColor;
-		margin: auto;
-		font-size: 1.3em;
-		font-family: "TiemposTex-Regular";
-		margin-bottom: 10px;
-	}
-
-	a {
-		text-decoration: none;
-		color: #fff;
-		font-size: 1.2em;
-		font-family: "TiemposTex-Regular";
-		padding: 5px;
-	}
-
-	a:hover {
-		color: $textColor;
-	}
-}
-
-.hero-image {
-	width: 100%;
-	margin-bottom: -4px;
-
-	img {
-		width: 100%;
-	}
-}
-
-.social-icons {
-	background-color: #6c6d70;
-	width: 100%;
-	margin: auto;
-	padding: 20px;
-	text-align: center;
-
-	.fb-icon, .insta-icon, .twitter-icon {
-		display: inline-block;
-		width: 7.5%;
-		margin: 10px 10px;
-	}
-
-	h1 {
-		padding: 5px;
-		color: $lightFont;
-		font-family: "TiemposTex-Regular";
-	}
-
-	p {
-		padding: 5px;
-		color: $lightFont;
-		font-family: "TiemposTex-Regular";
-	}
-
-}
-
-footer {
-	background: #8b8d90;
-	color: #fff;
-	text-align: center;
-	padding: 50px;
-	width: 100%;
-	font-family: "Founders-Regular";
-	font-size: 1.3em;
-
-	h1 {
-		padding: 20px;
-		font-size: 1.1em;
-	}
-
-	.inline-scale-email {
-		margin-bottom: 10px;
-	}
-
-	p {
-		color: $lightFont;
-		font-family: "TiemposTex-Regular";
-		padding: 5px;
-	}
-
-	a {
-		text-decoration: none;
-		color: $lightFont;
-	}
-
-	.company-footer-text {
-		padding: 5px;
-	}
-
-}
-
-@media only screen and (min-width : 768px) {
-
-	.header-image-wrap {
-		img {
-			max-width: 23%;
-		}
-	}
-
-	.hero-home {
+	.text-wrap-home {
+		padding: 50px;
 		p {
-			// padding: 20px;
-			margin-top: 89px;
-			margin-bottom: 80px;
-			font-size: 1.8em;
-		}
+			width: 90%;
+			font-size: 1.3em;
+			padding: 10px;
+			margin: 50px 20px;
+			position: absolute;
+			top: 14%;
+			left: 0%;
+			text-align: center;
+			line-height: 1.5;
+			color: $textColor;
+			font-family: "TiemposTex-Regular";
+		}	
 	}
 
-	.social-icons {
-		
-		.fb-icon, .insta-icon, .twitter-icon {
-			width: 3%;
-		}
-	}
+	
 }
-
-
 
 // ==========================ABOUT STYLES=================
 
@@ -393,6 +258,12 @@ footer {
 	margin: auto;
 	background-color: $softBgColor;
 
+	.about-blurb {
+		text-align: center;
+		padding: 20px;
+		line-height: 1.3;
+	}
+
 	h1 {
 		border-bottom: 1px solid $darkGrey;
 		text-align: center;
@@ -401,9 +272,14 @@ footer {
 		color: $darkGrey;
 	}
 
-	.col-1-about, .col-2-about {
+	.col-1-about, .col-2-about, .col-3-about {
 		margin-top: 25px;
-		text-align: left;
+		text-align: center;
+		font-family: "TiemposTex-Regular";
+
+		img {
+			margin: 20px;
+		}
 
 		h2 {
 			margin-bottom: 15px;
@@ -415,10 +291,15 @@ footer {
 			font-size: 1.1em;
 			margin: 15px 0px;
 			line-height: 1.2;
+			text-align: left;
 		}
 	}
 }
 
+
+@media only screen and (min-width : 768px) {
+
+}
 
 // ==========================TEAM STYLES=================
 
@@ -478,11 +359,9 @@ footer {
 	}
 }
 
+// ==========================BANKING STYLES=====================
 
-// ==========================REAL ESTATE STYLES=================
-
-
-.content-real-estate {
+.content-banking {
 	width: 100%;
 	max-width: 1200px;
 	padding: 20px;
@@ -496,11 +375,184 @@ footer {
 		font-size: 2em;
 		color: $darkGrey;
 	}
- 
-	img {
+
+	.banking-img {
 		display: block;
 		margin: auto;
 		padding: 20px;
+		text-align: center;
 	}
+
+	.banking-text-wrap {
+
+		h2 {
+			font-size: 1.2em;
+			font-family: "TiemposTex-Regular";
+			margin-bottom: 15px;
+		}
+
+		p {
+			color: rgba(101, 88, 68, 1);
+			font-family: "TiemposTex-Regular";
+			margin-bottom: 15px;
+		}
 	
+	}
+
 }
+
+
+
+// ==========================ENERGY STYLES=================
+
+
+.content-energy {
+	width: 100%;
+	max-width: 1200px;
+	padding: 20px;
+	margin: auto;
+	background-color: $softBgColor;
+
+	h1 {
+		border-bottom: 1px solid $darkGrey;
+		text-align: center;
+		padding: 10px;
+		font-size: 2em;
+		color: $darkGrey;
+	}
+
+	.energy-img {
+		display: block;
+		margin: auto;
+		padding: 20px;
+		text-align: center;
+	}
+
+	.energy-text-wrap {
+
+		h2 {
+			font-size: 1.2em;
+			font-family: "TiemposTex-Regular";
+			margin-bottom: 15px;
+		}
+
+		p {
+			color: rgba(101, 88, 68, 1);
+			font-family: "TiemposTex-Regular";
+			margin-bottom: 15px;
+		}
+	
+	}
+
+}
+
+
+
+
+
+
+// ==========================REAL ESTATE STYLES=================
+
+
+.content-real-estate {
+	width: 100%;
+	max-width: 1200px;
+	padding: 20px;
+	margin: auto;
+	background-color: $softBgColor;
+
+	.realEstate-hero-img {
+		display: block;
+		margin: auto;
+		padding: 20px;
+		
+	}
+
+	h1 {
+		border-bottom: 1px solid $darkGrey;
+		text-align: center;
+		padding: 10px;
+		font-size: 2em;
+		color: $darkGrey;
+	}
+
+	.real-estate-text-wrap {
+		font-family: "TiemposTex-Regular";
+
+		h2 {
+			font-size: 1.2em;
+			margin-bottom: 15px;
+		}
+
+		p {
+			margin-bottom: 15px;
+		}
+
+	}
+
+	.real-estate-footer {
+
+		h2 {
+			color: rgba(101, 88, 68, 1);
+			font-family: "TiemposTex-Regular";
+			text-align: center;
+		}
+
+		.social-icons {
+			width: 100%;
+			text-align: center;
+			padding: 10px;
+			margin-bottom: 20px;
+			font-size: 1.2em;
+		
+			.fb-icon, .insta-icon, .twitter-icon {
+				width: 5%;
+				margin: 5px 5px;
+			}
+		
+		
+			p {
+				color: rgba(101, 88, 68, 1);
+				font-family: "TiemposTex-Regular";
+			}
+		}
+	}
+}
+
+
+// ==========================CONTACT STYLES=================
+
+
+
+.content-contact {
+	width: 100%;
+	max-width: 1200px;
+	padding: 20px;
+	margin: auto;
+	background-color: $softBgColor;
+
+	h1 {
+		border-bottom: 1px solid $darkGrey;
+		text-align: center;
+		padding: 10px;
+		font-size: 2em;
+		color: $darkGrey;
+	}
+
+	.contact-us-text-wrap {
+		margin-top: 10px;
+
+		h2 {
+			font-size: 1.2em;
+			font-family: "TiemposTex-Regular";
+		}
+
+		p {
+			color: rgba(101, 88, 68, 1);
+			font-family: "TiemposTex-Regular";
+		}
+	
+	}
+
+}
+
