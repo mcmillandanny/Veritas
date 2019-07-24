@@ -307,31 +307,59 @@ header {
 @media only screen and (min-width : 960px) {
 
 	.content-about {
-
+		min-width: 960px;
 		.about-blurb {
 			width: 50%;
 			margin: auto;
 		}
 
-		.col-1-about, .col-2-about, .col-3-about {
-			width: 33%;
-			display: inline-block;
-			margin: 0px;
-			vertical-align: top;
+		.col-wrap {
+			display: flex;
+
+			.column {
+				flex: 1;
+				text-align: left;
+				margin: 0px;
+			}	
+			.col-1-about {
+				order: 1;
+				padding: 0px;
+				width: 33.333%;
+			}
+	
+			.col-2-about {
+				order: 2;
+				padding: 0px;
+				width: 33.333%;
+
+			}
 			
-
-			img {
-				width: 100%;
+			.col-3-about {
+				order: 3;
+				padding: 0px;
+				width: 33.333%;
 
 			}
-
-
+	
+			h2 {
+				margin: 10px 0px;
+			}
+	
 			p {
-				font-size: .9em;
+				line-height: 1.2;
+				font-size: .8em;
 			}
+			
+	
+			img {
+				width: 90%;
+				margin: 0px;
+			}
+	
 		}
-	}
 
+		
+	}
 }
 
 // ==========================TEAM STYLES=================
@@ -439,29 +467,34 @@ header {
 }
 
 
-@media only screen and (min-width : 768px) {
+@media only screen and (min-width : 960px) {
 
 	.content-banking {
+		
+		.banking-wrap {
+			display: flex;
 
-		.banking-img {
-			// margin: 20px 10px 20px 0px;
-			display: inline-block;
-			margin: 0px;
-			vertical-align: top;
-		}
 
-		.banking-text-wrap {
-			display: inline-block;
-			vertical-align: middle;
-			// margin: 20px 0px;
+			.banking-img {
+				padding: 20px 20px 20px 0px;
+				width: 400%;
+			}
 
-			p {
-				font-size: .9em;
-				line-height: 1.1;
+			.banking-text-wrap {
+				padding: 35px;
+				h2 {
+					font-size: 1.3em;
+					margin-bottom: 20px;
+				}
+		
+				p {
+					margin-bottom: 40px;
+					line-height: 1.2;
+				}
+
 			}
 		}
 	}
-
 }
 
 
@@ -486,9 +519,9 @@ header {
 
 	.energy-img {
 		display: block;
-		margin: auto;
+		// margin: auto;
 		padding: 20px;
-		text-align: center;
+		// text-align: center;
 
 		img {
 			width: 100%;
@@ -513,6 +546,36 @@ header {
 
 }
 
+@media only screen and (min-width : 960px) {
+
+	.content-energy {
+		
+		.energy-wrap {
+			display: flex;
+
+
+			.energy-img {
+				padding: 20px 20px 20px 0px;
+				width: 400%;
+			}
+
+			.energy-text-wrap {
+				padding: 35px;
+				h2 {
+					font-size: 1.3em;
+					margin-bottom: 20px;
+				}
+		
+				p {
+					margin-bottom: 40px;
+					line-height: 1.2;
+				}
+
+			}
+		}
+	}
+}
+
 
 
 
@@ -527,6 +590,19 @@ header {
 	padding: 20px;
 	margin: auto;
 	background-color: $softBgColor;
+
+	.real-estate-img {
+		p, a {
+			color: rgba(101, 88, 68, 1);
+			font-family: "TiemposTex-Regular";
+			padding: 5px 5px 5px 0px;
+
+		}
+
+		a {
+			text-decoration: none;
+		}
+	}
 
 	.realEstate-hero-img {
 		display: block;
@@ -571,19 +647,77 @@ header {
 			padding: 10px;
 			margin-bottom: 20px;
 			font-size: 1.2em;
+
 		
 			.fb-icon, .insta-icon, .twitter-icon {
-				width: 5%;
+				width: 3%;
 				margin: 5px 5px;
 			}
 		
 		
-			p {
+			p, a {
 				color: rgba(101, 88, 68, 1);
 				font-family: "TiemposTex-Regular";
 			}
 		}
 	}
+}
+
+@media only screen and (min-width: 960px) {
+
+	.content-real-estate {
+
+		.real-estate-wrap {
+			display: flex;
+
+
+			.realEstate-hero-img {
+				padding: 20px 20px 20px 0px;
+			}
+
+			.real-estate-text-wrap {
+				padding: 20px;
+				h2 {
+					font-size: 1.3em;
+					margin-bottom: 20px;
+				}
+		
+				p {
+					margin-bottom: 40px;
+					line-height: 1.2;
+				}
+		
+			}
+		}
+
+			.real-estate-footer {
+				text-align: left;
+
+				h2 {
+					text-align: left;
+				}
+
+			.social-icons {
+				padding: 10px;
+				margin-bottom: 20px;
+				font-size: 1.2em;
+				text-align: left;
+
+			
+				.fb-icon, .insta-icon, .twitter-icon {
+					width: 3%;
+					margin: 5px 5px;
+				}
+			
+			
+				p {
+					color: rgba(101, 88, 68, 1);
+					font-family: "TiemposTex-Regular";
+				}
+			}
+		}
+	}
+
 }
 
 
