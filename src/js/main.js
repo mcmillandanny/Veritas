@@ -13,6 +13,7 @@ function hamburgerToggle() {
     lines.forEach(function(line) {
         line.classList.toggle("change"); 
         nav.classList.toggle("toggle-nav");
+       
     });
 };
 hamburger.addEventListener("click", hamburgerToggle);
