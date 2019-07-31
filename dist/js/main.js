@@ -11,6 +11,7 @@ function hamburgerToggle() {
     lines.forEach(function (line) {
         line.classList.toggle("change");
         nav.classList.toggle("toggle-nav");
+        // TweenMax.from("")
     });
 };
 hamburger.addEventListener("click", hamburgerToggle);
