@@ -2,7 +2,6 @@
 
 ///Hamburger Toggle
 
-
 var hamburger = document.querySelector('.hamburger');
 var lines = document.querySelectorAll('.lines');
 var nav = document.querySelector("nav");
@@ -11,7 +10,6 @@ function hamburgerToggle() {
     lines.forEach(function (line) {
         line.classList.toggle("change");
         nav.classList.toggle("toggle-nav");
-        // TweenMax.from("")
     });
 };
 hamburger.addEventListener("click", hamburgerToggle);

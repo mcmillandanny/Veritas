@@ -693,6 +693,7 @@ nav ul a {
 	width: 100%;
 	margin-bottom: 20px;
 	font-size: 1.2em;
+	margin-top: 25px;
 }
 
 .content-real-estate .real-estate-footer .social-icons .fb-icon, .content-real-estate .real-estate-footer .social-icons .insta-icon, .content-real-estate .real-estate-footer .social-icons .twitter-icon {
@@ -711,13 +712,18 @@ nav ul a {
 }
 
 @media only screen and (min-width: 960px) {
+	.content-real-estate {
+		position: relative;
+	}
 	.content-real-estate .real-estate-wrap .realEstate-hero-img {
 		padding: 25px 20px 20px 0px;
 		width: 51.5%;
 		float: left;
 	}
-	.content-real-estate .real-estate-wrap .video {
-		float: left;
+	.content-real-estate .real-estate-wrap .video iframe {
+		position: absolute;
+		top: 120%;
+		left: 0%;
 		width: 50%;
 	}
 	.content-real-estate .real-estate-wrap .float-a-text {
@@ -728,6 +734,7 @@ nav ul a {
 	.content-real-estate .real-estate-wrap .real-estate-text-wrap {
 		float: left;
 		width: 48%;
+		padding: 25px;
 		text-align: left;
 	}
 	.content-real-estate .real-estate-wrap .real-estate-text-wrap h2 {
@@ -741,11 +748,12 @@ nav ul a {
 		font-family: "TiemposTex-Regular";
 	}
 	.content-real-estate .real-estate-wrap .real-estate-footer {
-		width: 48%;
-		float: left;
+		width: 40%;
+		position: absolute;
+		top: 82%;
+		left: 52.3%;
 		text-align: left;
 		margin-left: 15px;
-		margin-top: 10px;
 		font-family: "TiemposTex-Regular";
 	}
 	.content-real-estate .real-estate-wrap .real-estate-footer h2 {
@@ -760,7 +768,7 @@ nav ul a {
 	}
 	.content-real-estate .real-estate-wrap .real-estate-footer .social-icons .fb-icon, .content-real-estate .real-estate-wrap .real-estate-footer .social-icons .insta-icon, .content-real-estate .real-estate-wrap .real-estate-footer .social-icons .twitter-icon {
 		width: 5%;
-		margin: -7px 5px;
+		margin: 0px 5px;
 	}
 	.content-real-estate .real-estate-wrap .real-estate-footer .social-icons p {
 		display: inline-block;

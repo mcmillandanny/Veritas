@@ -804,6 +804,8 @@ nav {
 			width: 100%;
 			margin-bottom: 20px;
 			font-size: 1.2em;
+			margin-top: 25px;
+
 
 		
 			.fb-icon, .insta-icon, .twitter-icon {
@@ -831,10 +833,8 @@ nav {
 @media only screen and (min-width: 960px) {
 
 	.content-real-estate {
-
+		position: relative;
 		.real-estate-wrap {
-
-
 
 			.realEstate-hero-img {
 				padding: 25px 20px 20px 0px;
@@ -843,8 +843,10 @@ nav {
 			}
 
 
-			.video {
-				float: left;
+			.video iframe{
+				position: absolute;
+				top: 120%;
+				left: 0%;
 				width: 50%;
 
 			}
@@ -860,6 +862,7 @@ nav {
 			.real-estate-text-wrap {
 				float: left;
 				width: 48%;
+				padding: 25px;
 
 				text-align: left;
 				h2 {
@@ -874,48 +877,50 @@ nav {
 					font-family: "TiemposTex-Regular";
 
 				}
-		
 			}
-				.real-estate-footer {
-					width: 48%;
-					float: left;
-					text-align: left;
-					margin-left: 15px;
-					margin-top: 10px;
-					font-family: "TiemposTex-Regular";
-					h2 {
-						font-size: 16px;
-						display: inline-block;
-						vertical-align: middle;
-					}
+			.real-estate-footer {
+				width: 40%;
+				position: absolute;
+				top: 82%;
+				left: 52.3%;
+				text-align: left;
+				margin-left: 15px;
+				font-family: "TiemposTex-Regular";
+				h2 {
+					font-size: 16px;
+					display: inline-block;
+					vertical-align: middle;
+				}
 
-				.social-icons {
-					padding: 10px 0px;
-					margin-bottom: 20px;
-					font-size: 1.2em;
+			.social-icons {
+				padding: 10px 0px;
+				margin-bottom: 20px;
+				font-size: 1.2em;
 
+			
+				.fb-icon, .insta-icon, .twitter-icon {
+					width: 5%;
+					margin: 0px 5px;
+
+				}
+				p {
+					display: inline-block;
+					vertical-align: middle;
+
+				}
 				
-					.fb-icon, .insta-icon, .twitter-icon {
-						width: 5%;
-						margin: -7px 5px;
 
-					}
-					p {
-						display: inline-block;
-						vertical-align: middle;
+				p, a{
+					color: grey;
+					font-size: 16px;
 
-					}
-					
-
-					p, a{
-						color: grey;
-						font-size: 16px;
-
-					}
 				}
 			}
 		}
+			
+		}
 
+		
 		.clear-floats {
 			clear: both;
 		}
