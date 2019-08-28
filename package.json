@@ -1,7 +1,7 @@
 {
-  "name": "circus-starter",
+  "name": "Veritas-Development",
   "version": "1.6.1",
-  "description": "A good starting point for new Circus students",
+  "description": "Veritas site",
   "main": "gulpfile.js",
   "dependencies": {
     "npm": "^6.4.0"
